@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+main{
+    margin: 0 auto;
+    width: 25rem;
+}
+
+h1{
+    margin-top: 5rem;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+
+ul{
+    margin-top: 3rem;
+}
+
+ul li {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    padding: 0;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 1s;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+}
+
+
+ul li.checked{
+    color: rgb(204, 204, 204);
+    text-decoration: line-through;
+}
+
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: -6px;
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+
+input:focus{
+    border-bottom: 1px solid #E5E5E5;
+}  
+
+
+input{
+    padding: 0.3rem;
+    width: 100%;
+    border: none;
+    background-color: #000;
+    border-bottom: 1px solid black;
+    color: white;
+    outline: none;
+    font-size: 1.2rem;
+    transition-duration: .5s;
+    margin-top: 1rem;
+    }
